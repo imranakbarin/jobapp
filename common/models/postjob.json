@@ -1,0 +1,64 @@
+{
+  "name": "postjob",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Id": {
+      "type": "string",
+      "id": true
+    },
+    "jobid": {
+      "type": "string",
+      "id": true
+    },
+    "jobheader": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "creationdate": {
+      "type": "date"
+    },
+    "salary": {
+      "type": "number"
+    },
+    "location": {
+      "type": "string"
+    },
+    "noticeperiod": {
+      "type": "string"
+    },
+    "vip": {
+      "type": "boolean"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

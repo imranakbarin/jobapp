@@ -1,0 +1,71 @@
+{
+  "name": "userprofile",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Id": {
+      "type": "string",
+      "id": true
+    },
+    "experience": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "currentctc": {
+      "type": "number"
+    },
+    "currcompany": {
+      "type": "string"
+    },
+    "prevcompany": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "noticeperiod": {
+      "type": "string"
+    },
+    "expectingctc": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "lastlogin": {
+      "type": "date"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
